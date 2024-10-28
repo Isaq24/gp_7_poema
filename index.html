@@ -3,72 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vicent Andrés Estellés EPISODI IV</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            display: flex;
-            width: 100vw;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-        }
-        h1, p{
-            margin-bottom: 2rem;
-        }
-        button{
+    <title>episodi iv</title>
+    <head>
+        <style>
+            body {
+                background-color: #333333;
+                color: #01FF00;
+                font-family: 'Courier New', Courier, monospace;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .container {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+            .title, .author, .section, .text, .text-small, .text-large, .text-xlarge {
+            transition: font-size 0.3s ease; /* suavizar la transición */
+            }
+            .title {
+                font-size: 5em;
                 position: absolute;
-                left: 0;
-                top: 0;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            
-                background-color: #C5C5C5;
-                border: none;
-                 width: 10vw;
-                   color: #000000;
-                   font-size: 1.2rem;
-              font-weight: normal;
-             text-align: center;
-             padding: 1rem 2rem;
-              margin: auto;
-             margin-top: 1rem;
-             margin-left: 1rem;
-              box-shadow: 2px 2px #D8D8E0 inset, 2px 2px;
-}
-.menu:active {
-  box-shadow: 2px 2px inset, 2px 2px #D8D8E0;
-}
+                top: 2%;
+                left: 20%;
+            }
+            .author {
+                font-size: 2em;
+                position: absolute;
+                top: 14%;
+                right: 18%;
+            }
+            .section {
+                font-size: 3em;
+                position: absolute;
+                top: 20%;
+                left: 5%;
+            }
+            .text {
+                font-size: 1.5em;
+                position: absolute;
+                top: 23%;
+                left: 22%;
+            }
+            .text-small {
+                font-size: 1em;
+                position: absolute;
+            }
+            .text-small-1 {
+                top: 27%;
+                left: 5%;
+            }
+            .text-small-2 {
+                top: 29%;
+                left: 5%;
+            }
+            .text-small-3 {
+                top: 31%;
+                left: 5%;
+            }
+            .text-small-4 {
+                top: 36%;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+            }
+            .text-small-5 {
+                top: 38%;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+            }
+            .text-large {
+                font-size: 2em;
+                position: absolute;
+            }
+            .text-large-1 {
+                top: 45%;
+                right: 5%;
+                text-align: right;
+            }
+            .text-large-2 {
+                top: 50%;
+                right: 5%;
+                text-align: right;
+            }
+            .text-large-3 {
+                top: 60%;
+                left: 30%;
+            }
+            .text-large-4 {
+                top: 65%;
+                left: 49%;
+            }
+            .text-small-6 {
+                top: 55%;
+                left: 14%;
+            }
+            .text-small-7 {
+                top: 57%;
+                left: 14%;
+            }
+            .text-xlarge-1 {
+                top: 70%;
+                left: 13%;
+            }
+            .text-small-8 {
+                top: 75%;
+                left: 2%;
+            }
+            .text-small-9 {
+                top: 83%;
+                left: 35%;
+            }
+            .text-small-10 {
+                top: 85%;
+                left: 35%;
+            }
+            .text-xlarge {
+                font-size: 4em;
+                position: absolute;
+            }
+            .text-xlarge-2 {
+                top: 85%;
+                left: 45%;
+            }
+            .text-large-5 {
+                top: 75%;
+                left: 70%;
+            }
+            .text-large-6 {
+                top: 80%;
+                left: 63%;
+            }
+            .title:hover, .author:hover, .section:hover, .text:hover, .text-small:hover, .text-large:hover, .text-xlarge:hover {
+            font-size: calc(1.2 * var(--original-font-size)); /* Aumento del tamaño al pasar el cursor */
+        }
+        .title { --original-font-size: 5em; }
+        .author { --original-font-size: 2em; }
+        .section { --original-font-size: 3em; }
+        .text { --original-font-size: 1.5em; }
+        .text-small { --original-font-size: 1em; }
+        .text-large { --original-font-size: 2em; }
+        .text-xlarge { --original-font-size: 4em; }
+            .strikethrough {
+                text-decoration: line-through;
+            }
     </style>
-</head>
-<body>
-    <button class="menu">index</button>
-    <div class="container">
-            <h1>EPISODI IV</h1>
-        <p>
-            el negre aquell que dintre el cotxe aquell<br>
-            la va fruir arravatadament<br>
-            en arribar a brusel les només<br>
-            i es va tancar amb ell en un hotel<br>
-        </p>
-        <p>
-            i no sap res de brusel-les no dóna<br>
-            cap argument cap raó i es capfica<br>
-            llarga en silenci que no diu: enyora<br>
-            el negre aquell a dintre el cotxe aquell<br>
-        </p>
-        <p>
-            i aquell hotel desencolat el llit<br>
-            de tant d'amor i furiós esperma<br>
-            com quan recorda el louvre que va veure<br>
-        </p>
-        <p>
-            sota unes cuixes emigrants piloses<br>
-            i clogué els ulls de tant de gust i veia<br>
-            passar el sena el tàmesi i el ródano<br>
-        </p>
-    </div>
-</body>
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title strikethrough">EPISODI IV:</div>
+            <div class="author strikethrough">VICENT ANDRÉS ESTELLÉS</div>
+            <div class="section strikethrough">EL NEGRE</div>
+            <div class="text strikethrough">AQUELL QUE DINTRE EL COTXE AQUELL</div>
+            <div class="text-small strikethrough text-small-1">LA VA FRUIR ARRAVATADAMENT</div>
+            <div class="text-small strikethrough text-small-2">EN ARRIBAR A BRUSEL LES NOMÉS</div>
+            <div class="text-small strikethrough text-small-3">I ES VA TANCAR AMB ELL EN UN HOTEL</div>
+            <div class="text-small strikethrough text-small-4">I NO SAP RES DE BRUSEL-LES NO DÓNA</div>
+            <div class="text-small strikethrough text-small-5">CAP ARGUMENT CAP RAÓ I ES CAPFICA</div>
+            <div class="text-large strikethrough text-large-1">LLARGA EN SILENCI QUE NO DIU: ENYORA</div>
+            <div class="text-large strikethrough text-large-2">EL NEGRE AQUELL A DINTRE EL COTXE AQUELL</div>
+            <div class="text-small strikethrough text-small-6">I AQUELL HOTEL DESENCOLAT EL LLIT</div>
+            <div class="text-small strikethrough text-small-7">DE TANT D'AMOR I FURIÓS ESPERMA</div>
+            <div class="text-large strikethrough text-large-3">COM QUAN RECORDA EL LOUVRE</div>
+            <div class="text-large strikethrough text-large-4">QUE VA VEURE</div>
+            <div class="text-small strikethrough text-small-8">SOTA UNES CUIXES</div>
+            <div class="text-xlarge strikethrough text-xlarge-1">EMIGRANTS PILOSES</div>
+            <div class="text-large strikethrough text-large-5">I CLOGUÉ ELS ULLS</div>
+            <div class="text-large strikethrough text-large-6">DE TANT DE GUST I VEIA</div>
+            <div class="text-small strikethrough text-small-9">PASSAR EL SENA</div>
+            <div class="text-small strikethrough text-small-10">EL TÀMESI I EL</div>
+            <div class="text-xlarge strikethrough text-xlarge-2">RÓDANO</div>
+        </div>
+    </body>
 </html>
